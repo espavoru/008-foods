@@ -1,0 +1,22 @@
+//- Все примеси в этом файле должны начинаться c имени блока (section-heading)
+
+mixin section-heading(data, mods)
+
+  //- Принимает:
+  //-   data    {object} - данные
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +section-heading('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' section-heading--' + modsList[i].trim();
+      }
+    }
+
+  h2.section-heading(class=allMods)&attributes(attributes)
+    block

@@ -32,6 +32,8 @@
   -webkit-text-size-adjust: 100%; // stylelint-disable-line
   min-width: 320px;
   min-height: 100%;
+  font-size: 62.5%;
+
 
   &__inner {
     display: flex;
@@ -65,8 +67,8 @@ body {
   margin: 0;
   word-break: break-word;
   font-family: $font-family;
-  font-size: $font-size;
   line-height: $line-height;
+  font-weight: 400;
   text-align: left;
   color: $text-color;
   background-color: $body-bg;

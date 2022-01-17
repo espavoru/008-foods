@@ -27,7 +27,7 @@ html(class='page no-js', lang=lang)
     //- meta(name='msapplication-navbutton-color', content='#000')
     //- meta(name='apple-mobile-web-app-status-bar-style', content='#000')
     block meta
-      title #{currentTitle} | Pink
+      title #{currentTitle}
       meta(name='description', content=currentDescription)
 
     block fonts
@@ -38,6 +38,9 @@ html(class='page no-js', lang=lang)
     block head
       if Bootstrap4
         //- link for Bootstrap 4 css styles
+      if FontAwesome
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css')
+
       link(rel='stylesheet', href='css/style.css')
       script
         include ../js/head-script.js

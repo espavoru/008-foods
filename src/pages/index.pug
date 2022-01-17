@@ -2,17 +2,24 @@ extends ../pug/layout.pug
 
 append config
   -
-    currentTitle = 'Главная'
-    currentDescription = 'Pink app'
+    currentTitle = 'Foods'
+    currentDescription = 'Foods page'
     currentUrl = 'index.html'
 
 block content
-  h1 Top news
+  +hero()
 
-  ol
-    li Man Found Having Tea Party With Donkey Again
-    li Woman With Epic Tattoo Arrested for 37th Time
-    li Viral Photo of Donkey Had Been Photoshopped
-    li Man Buys Hats For Low Income Local Family
-    li Man Jailed For Threatening Wife With Crumpled Hawk
-    li Small Tornado Forcast in Northern Regions
+    +section-heading()
+      | Variety of Foods
+
+    .hero__icons
+      i.fas.fa-egg.change
+      i.fas.fa-stroopwafel
+      i.fas.fa-cheese
+      i.fas.fa-hotdog
+      i.fas.fa-drumstick-bite
+      i.fas.fa-apple-alt
+      i.fas.fa-ice-cream
+      i.fas.fa-fish
+      i.fas.fa-cookie
+      i.fas.fa-seedling
