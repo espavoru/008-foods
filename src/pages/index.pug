@@ -22,6 +22,7 @@ block content
       i.fas.fa-fish
       i.fas.fa-cookie
       i.fas.fa-seedling
+  ///.hero
 
   +popular-meals()
     +section-heading()
@@ -58,3 +59,83 @@ block content
         })(class='meal__img')
         h3.meal__name Lobster
         button.meal__button Order now
+  ///.popular-meals
+
+  section.gallery
+    +section-heading()
+      | gallery
+
+    .gallery__container
+      a.gallery__link(title='Order Now' href='#')
+        +picture({
+          'img': 'gallery-01',
+          'alt': 'Pancakes',
+          'lg': false,
+          'md': false,
+          'ext': 'jpg'
+        })(class='gallery__img')
+        h3.gallery__name Pancakes
+        p.gallery__description.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic quae quisquam repudiandae dignissimos ad.
+
+      a.gallery__link(title='Order Now' href='#')
+        +picture({
+          'img': 'gallery-02',
+          'alt': 'Cupcakes',
+          'lg': false,
+          'md': false,
+          'ext': 'jpg'
+        })(class='gallery__img')
+        h3.gallery__name Cupcakes
+        p.gallery__description.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic quae quisquam repudiandae dignissimos ad.
+
+      a.gallery__link(title='Order Now' href='#')
+        +picture({
+          'img': 'gallery-03',
+          'alt': 'Hummus',
+          'lg': false,
+          'md': false,
+          'ext': 'jpg'
+        })(class='gallery__img')
+        h3.gallery__name Hummus
+        p.gallery__description.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic quae quisquam repudiandae dignissimos ad.
+
+      a.gallery__link(title='Order Now' href='#')
+        +picture({
+          'img': 'gallery-04',
+          'alt': 'Hamburger',
+          'lg': false,
+          'md': false,
+          'ext': 'jpg'
+        })(class='gallery__img')
+        h3.gallery__name Hamburger
+        p.gallery__description.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic quae quisquam repudiandae dignissimos ad.
+
+      a.gallery__link(title='Order Now' href='#')
+        +picture({
+          'img': 'gallery-05',
+          'alt': 'Salmon',
+          'lg': false,
+          'md': false,
+          'ext': 'jpg'
+        })(class='gallery__img')
+        h3.gallery__name Salmon
+        p.gallery__description.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic quae quisquam repudiandae dignissimos ad.
+
+      a.gallery__link(title='Order Now' href='#')
+        +picture({
+          'img': 'gallery-06',
+          'alt': 'Vegetables',
+          'lg': false,
+          'md': false,
+          'ext': 'jpg'
+        })(class='gallery__img')
+        h3.gallery__name Vegetables
+        p.gallery__description.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic quae quisquam repudiandae dignissimos ad.
+
+  ///.gallery
