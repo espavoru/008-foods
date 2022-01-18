@@ -29,7 +29,14 @@ block content
 
     .meals-container
       +meal()
-        img(class='meal__img', src='/img/card-img-1.png', alt='Fish')
+        +picture({
+          'img': 'meal-01',
+          'alt': 'Fish',
+          'lg': false,
+          'md': true,
+          'ext': 'png'
+        })(class='meal__img')
+        //- img(class='meal__img', src='/img/card-img-1.png', alt='Fish')
         h3.meal__name Fish
         button.meal__button Order now
       +meal()
