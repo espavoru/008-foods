@@ -6,6 +6,8 @@ append config
     currentDescription = 'Foods page'
     currentUrl = 'index.html'
 
+block header
+
 block content
   +hero()
     +section-heading()
@@ -137,5 +139,19 @@ block content
         h3.gallery__name Vegetables
         p.gallery__description.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic quae quisquam repudiandae dignissimos ad.
-
   ///.gallery
+
+block footer
+  +page-footer()
+    .page-footer__text
+      h2.page-footer__heading Sign Me Up
+      p.page-footer__paragraph Be the first to know about new products
+    ///.page-footer__text
+
+    form.page-footer__form(action='')
+      input.page-footer__input(type='email' placeholder='Enter Your Email' name='email')
+      button.page-footer__btn(type='submit')
+        i.fas.fa-arrow-right
+    ///.page-footer__form
+
+    p.page-footer__copyright CodeAndCreate &copy; All rights reserved
