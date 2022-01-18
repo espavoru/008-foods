@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="page no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">
+  <meta content="notranslate" name="google">
+  <title>Foods</title>
+  <meta name="description" content="Foods page">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&amp;display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+// Браузер и ОС
+document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+function cth(c){document.documentElement.classList.add(c)}
+'ontouchstart' in window?cth('touch'):cth('no-touch');
+if(typeof InstallTrigger!=='undefined')cth('firefox');
+if(/constructor/i.test(window.HTMLElement)||(function(p){return p.toString()==="[object SafariRemoteNotification]"})(!window['safari']||(typeof safari!=='undefined'&&safari.pushNotification)))cth('safari');
+if(/*@cc_on!@*/false||!!document.documentMode)cth('ie');
+if(!(/*@cc_on!@*/false||!!document.documentMode)&&!!window.StyleMedia)cth('edge');
+if(!!window.chrome&&(!!window.chrome.webstore||!!window.chrome.runtime))cth('chrome');
+if(~navigator.appVersion.indexOf("Win"))cth('windows');
+if(~navigator.appVersion.indexOf("Mac"))cth('osx');
+if(~['iPad','iPhone','iPod'].indexOf(navigator.platform))cth('ios');
+if(~navigator.appVersion.indexOf("Linux"))cth('linux');
+
+// Добавление 1vh (использование: height: 100vh; height: calc(var(--vh, 1vh) * 100);) для фикса 100vh на мобилках
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+window.addEventListener('resize', () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+
+// Добавление css-scroll-size для борьбы с проблемами скроллируемых блоков
+document.addEventListener("DOMContentLoaded", () => {
+  const outer = document.createElement('div');
+  const inner = document.createElement('div');
+  outer.style.overflow = 'scroll';
+  outer.classList.add('scrollbar');
+  document.body.appendChild(outer);
+  outer.appendChild(inner);
+  const scrollbarSize = outer.offsetWidth - inner.offsetWidth;
+  document.body.removeChild(outer);
+  document.documentElement.style.setProperty('--css-scroll-size', `${scrollbarSize}px`);
+});
+</script>
+</head>
+
+<body><noscript>Enable JavaScript please.</noscript>
+  <div class="page__inner">
+    <div class="page__content">
+      <section class="hero">
+        <h2 class="section-heading">Variety of Foods</h2>
+        <div class="hero__icons"><i class="fas fa-egg change"></i><i class="fas fa-stroopwafel"></i><i class="fas fa-cheese"></i><i class="fas fa-hotdog"></i><i class="fas fa-drumstick-bite"></i><i class="fas fa-apple-alt"></i><i class="fas fa-ice-cream"></i><i class="fas fa-fish"></i><i class="fas fa-cookie"></i><i class="fas fa-seedling"></i></div>
+      </section>
+      <!--/.hero-->
+      <section class="popular-meals">
+        <h2 class="section-heading">popular meals</h2>
+        <div class="meals-container">
+          <div class="meal">
+            <picture class="picture meal__img">
+              <source media="(min-width: 660px)" type="image/webp" srcset="img/meal-01-md.webp, img/meal-01-md@2x.webp 2x" />
+              <source media="(min-width: 660px)" type="image/png" srcset="img/meal-01-md.png, img/meal-01-md@2x.png 2x" />
+              <source media="(min-width: 0)" type="image/webp" srcset="img/meal-01-sm.webp, img/meal-01-sm@2x.webp 2x" /><img class="picture__img" alt="Fish" width="320" src="img/meal-01-sm.png" srcset="img/meal-01-sm@2x.png 2x" />
+            </picture>
+            <h3 class="meal__name">Fish</h3><button class="meal__button">Order now</button>
+          </div>
+          <!--/.meal-->
+          <div class="meal">
+            <picture class="picture meal__img">
+              <source media="(min-width: 660px)" type="image/webp" srcset="img/meal-02-md.webp, img/meal-02-md@2x.webp 2x" />
+              <source media="(min-width: 660px)" type="image/png" srcset="img/meal-02-md.png, img/meal-02-md@2x.png 2x" />
+              <source media="(min-width: 0)" type="image/webp" srcset="img/meal-02-sm.webp, img/meal-02-sm@2x.webp 2x" /><img class="picture__img" alt="Cake" width="320" src="img/meal-02-sm.png" srcset="img/meal-02-sm@2x.png 2x" />
+            </picture>
+            <h3 class="meal__name">Cake</h3><button class="meal__button">Order now</button>
+          </div>
+          <!--/.meal-->
+          <div class="meal">
+            <picture class="picture meal__img">
+              <source media="(min-width: 660px)" type="image/webp" srcset="img/meal-03-md.webp, img/meal-03-md@2x.webp 2x" />
+              <source media="(min-width: 660px)" type="image/png" srcset="img/meal-03-md.png, img/meal-03-md@2x.png 2x" />
+              <source media="(min-width: 0)" type="image/webp" srcset="img/meal-03-sm.webp, img/meal-03-sm@2x.webp 2x" /><img class="picture__img" alt="Lobster" width="320" src="img/meal-03-sm.png" srcset="img/meal-03-sm@2x.png 2x" />
+            </picture>
+            <h3 class="meal__name">Lobster</h3><button class="meal__button">Order now</button>
+          </div>
+          <!--/.meal-->
+        </div>
+      </section>
+      <!--/.popular-meals-->
+      <section class="gallery">
+        <h2 class="section-heading">gallery</h2>
+        <div class="gallery__container"><a class="gallery__link" title="Order Now" href="#">
+            <picture class="picture gallery__img">
+              <source media="(min-width: 0)" type="image/webp" srcset="img/gallery-01-sm.webp, img/gallery-01-sm@2x.webp 2x" /><img class="picture__img" alt="Pancakes" width="320" src="img/gallery-01-sm.jpg" srcset="img/gallery-01-sm@2x.jpg 2x" />
+            </picture>
+            <h3 class="gallery__name">Pancakes</h3>
+            <p class="gallery__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic quae quisquam repudiandae dignissimos ad.
+            </p>
+          </a><a class="gallery__link" title="Order Now" href="#">
+            <picture class="picture gallery__img">
+              <source media="(min-width: 0)" type="image/webp" srcset="img/gallery-02-sm.webp, img/gallery-02-sm@2x.webp 2x" /><img class="picture__img" alt="Cupcakes" width="320" src="img/gallery-02-sm.jpg" srcset="img/gallery-02-sm@2x.jpg 2x" />
+            </picture>
+            <h3 class="gallery__name">Cupcakes</h3>
+            <p class="gallery__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic quae quisquam repudiandae dignissimos ad.
+            </p>
+          </a><a class="gallery__link" title="Order Now" href="#">
+            <picture class="picture gallery__img">
+              <source media="(min-width: 0)" type="image/webp" srcset="img/gallery-03-sm.webp, img/gallery-03-sm@2x.webp 2x" /><img class="picture__img" alt="Hummus" width="320" src="img/gallery-03-sm.jpg" srcset="img/gallery-03-sm@2x.jpg 2x" />
+            </picture>
+            <h3 class="gallery__name">Hummus</h3>
+            <p class="gallery__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic quae quisquam repudiandae dignissimos ad.
+            </p>
+          </a><a class="gallery__link" title="Order Now" href="#">
+            <picture class="picture gallery__img">
+              <source media="(min-width: 0)" type="image/webp" srcset="img/gallery-04-sm.webp, img/gallery-04-sm@2x.webp 2x" /><img class="picture__img" alt="Hamburger" width="320" src="img/gallery-04-sm.jpg" srcset="img/gallery-04-sm@2x.jpg 2x" />
+            </picture>
+            <h3 class="gallery__name">Hamburger</h3>
+            <p class="gallery__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic quae quisquam repudiandae dignissimos ad.
+            </p>
+          </a><a class="gallery__link" title="Order Now" href="#">
+            <picture class="picture gallery__img">
+              <source media="(min-width: 0)" type="image/webp" srcset="img/gallery-05-sm.webp, img/gallery-05-sm@2x.webp 2x" /><img class="picture__img" alt="Salmon" width="320" src="img/gallery-05-sm.jpg" srcset="img/gallery-05-sm@2x.jpg 2x" />
+            </picture>
+            <h3 class="gallery__name">Salmon</h3>
+            <p class="gallery__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic quae quisquam repudiandae dignissimos ad.
+            </p>
+          </a><a class="gallery__link" title="Order Now" href="#">
+            <picture class="picture gallery__img">
+              <source media="(min-width: 0)" type="image/webp" srcset="img/gallery-06-sm.webp, img/gallery-06-sm@2x.webp 2x" /><img class="picture__img" alt="Vegetables" width="320" src="img/gallery-06-sm.jpg" srcset="img/gallery-06-sm@2x.jpg 2x" />
+            </picture>
+            <h3 class="gallery__name">Vegetables</h3>
+            <p class="gallery__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic quae quisquam repudiandae dignissimos ad.</p>
+          </a></div>
+      </section>
+      <!--/.gallery-->
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__inner">
+          <div class="page-footer__text">
+            <h2 class="page-footer__heading">Sign Me Up</h2>
+            <p class="page-footer__paragraph">Be the first to know about new products</p>
+          </div>
+          <!--/.page-footer__text-->
+          <form class="page-footer__form" action=""><input class="page-footer__input" type="email" placeholder="Enter Your Email" name="email"><button class="page-footer__btn" type="submit"><i class="fas fa-arrow-right"></i></button></form>
+          <!--/.page-footer__form-->
+          <p class="page-footer__copyright">CodeAndCreate &copy; All rights reserved</p>
+        </div>
+      </footer>
+    </div>
+  </div><script defer src="js/bundle.js">
+  </script>
+
+</body>
+
+</html>
