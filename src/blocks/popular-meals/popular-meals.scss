@@ -16,8 +16,22 @@
 
   background-color: #222222;
 
+  @media (max-width: 1400px) {
+    height: auto;
+    padding-top: 10rem;
+    padding-bottom: 12rem;
+  }
+
   .meals-container {
     display: flex;
     justify-content: space-evenly;
+
+    @media (max-width: 1400px) {
+      margin-top: 10rem;
+    }
+
+    @media (max-width: 1000px) {
+      flex-wrap: wrap;
+    }
   }
 }

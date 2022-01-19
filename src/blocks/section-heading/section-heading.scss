@@ -8,9 +8,22 @@
 
   font-size: 12rem;
   font-weight: 900;
-  text-align-last: center;
+  text-align: center;
   text-transform: capitalize;
   color: #ffffff;
   letter-spacing: 0.5rem;
   text-shadow: 0.3rem 0.3rem 0.3rem #000000;
+
+  @media (max-width: 1000px) {
+    margin-right: 5rem;
+    margin-left: 5rem;
+
+    font-size: 9rem;
+  }
+
+  @media (max-width: 700px) {
+    margin-right: 10rem;
+    margin-left: 10rem;
+    font-size: 7rem;
+  }
 }

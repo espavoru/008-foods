@@ -12,11 +12,28 @@
 
   background-color: #222;
 
+  @media (max-width: 1000px) {
+    height: 30rem;
+  }
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 40rem;
+  }
+
   &__inner {
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
     padding: 3rem 0;
+
+    @media (max-width: 700px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
   }
 
   &__copyright {
@@ -35,6 +52,10 @@
 
   &__text {
     text-transform: uppercase;
+
+    @media (max-width: 700px) {
+      margin-bottom: 8rem;
+    }
   }
 
   &__heading {

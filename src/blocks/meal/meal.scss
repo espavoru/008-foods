@@ -19,6 +19,10 @@
   background-color: #a79a2d;
   box-shadow: 1rem 1rem 1rem #000;
 
+  @media (max-width: 1000px) {
+    margin: 5rem;
+  }
+
   &:hover {
     transform: rotateY(20deg) skewX(-2deg) translateY(-3rem);
     box-shadow: 2rem 2rem 2rem #000;
