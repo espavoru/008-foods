@@ -7,6 +7,26 @@ append config
     currentUrl = 'index.html'
 
 block header
+  nav.navbar.target
+    a.navbar__link(href='#')
+      i.fas.fa-home
+      span Home
+    a.navbar__link(href='#')
+      i.fas.fa-utensils
+      span Meals
+    a.navbar__link(href='#')
+      i.fas.fa-hamburger
+      span Burger
+    a.navbar__link(href='#')
+      i.fas.fa-pizza-slice
+      span Pizza
+    a.navbar__link(href='#')
+      i.fas.fa-blender-phone
+      span Contact
+
+  ///.navbar
+
+  i.menu.target
 
 block content
   +hero()
